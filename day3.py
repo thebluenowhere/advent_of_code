@@ -20,3 +20,19 @@ if index1a > index1b:
 
 print('The gamma rate is: ' + str(gamma))
 print('The epsilon rate is: ' + str(epsilon))
+#
+#def f(index):
+#    for data in i:
+#        gamma = []
+#        epsilon = []
+#        list = []
+#        dig = data[index]
+#        list.append(data)#
+
+#        index1a = list.count('0')
+#        index1b = list.count('1')
+
+#        if index1a > index1b:
+#            gamma.append(0)
+#            epsilon.append(1)
+#print(f(0))
