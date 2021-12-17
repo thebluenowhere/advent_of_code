@@ -9,11 +9,13 @@ for data in i:
     dig1 = data[0]
     list.append(data[0])
 
-for n in list:
-    count_0 = list.count('0')
-    count_1 = list.count('1')
-    if count_1 > count_0:
-        binary.append('1')
-    else:
-        binary.append('0')
+index1a = list.count(0)
+index1b = list.count(1)
+
+if index1a > index1b:
+    binary.append(index1a)
+else:
+    binary.append(index1b)
+
 print(binary)
+
