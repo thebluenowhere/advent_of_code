@@ -1,39 +1,24 @@
 #!/usr/bin/env python3
 
 file = open('input3.txt', 'r')
-i = [data.strip() for data in file.readlines()]
+lines = [data.strip() for data in file.readlines()]
 
-gamma = []
-epsilon = []
+gamma = ""
+epsilon = ""
+digits = ""
 
-def gamma(i):
-    zeroCount = 0
-    oneCount = 1
-    for x in lines:
-        if x[i] == '0':
-            zeroCount += 1
+for i in range(12):
+    for x in lines[i]:
+        digits = digits + str(lines[i])
+        zero = digits.count('0')
+        ones = digits.count('1')
+        if zero > ones:
+            gamma += '0'
+            epsilon += '1'
         else:
-            oneCount += 1
-        if zeroCount > oneCount:
-            return '0'
-        else:
-            return '1'
+            gamma += '1'
+            epsilon += '0'
+        digits = ""
 
-
-
-    dig0 = data[0]
-    list.append(data[0])
-
-index0a = list.count('0')
-index0b = list.count('1')
-
-if index0a > index0b:
-    gamma.append(0)
-    epsilon.append(1)
-else:
-    gamma.append(1)
-    epsilon.append(0)
-
-
-print('The gamma rate is: ' + str(gamma))
-print('The epsilon rate is: ' + str(epsilon))
+print(gamma)
+print(epsilon)
