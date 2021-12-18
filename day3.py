@@ -6,17 +6,18 @@ print(lines)
 gamma = ""
 epsilon = ""
 digits = ""
+i = lines[0]
 
-for i in lines[i]:
+for lines in range(len(lines)):
+    for lines[i] in range(12):
+       digits = digits + lines[i]
+       zero = digits.count('0')
+       ones = digits.count('1')
+       if zero > ones:
+           gamma += '0'
+           epsilon += '1'
+       else:
+           gamme += '1'
+           epsilon += '0'
+           digits = ""
 
-    digits = digits + str(lines[i])
-    #print(digits)
-    zero = digits.count('0')
-    ones = digits.count('1')
-    if zero > ones:
-        gamma += '0'
-        epsilon += '1'
-    else:
-        gamma += '1'
-        epsilon += '0'
-    digits = ""
