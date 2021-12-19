@@ -6,7 +6,6 @@ fileLines = [data.strip() for data in file.readlines()]
 gamma = ""
 epsilon = ""
 
-
 for i in range(12):
     oneCount = 0
     zeroCount = 0
@@ -23,5 +22,6 @@ for i in range(12):
         gamma += "1"
         epsilon += "0"
 
-print(gamma)
-print(epsilon)
+gamma = int(gamma, 2)
+epsilon = int(epsilon, 2)
+print(gamma * epsilon)
