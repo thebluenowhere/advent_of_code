@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
 
 file = open('input3.txt', 'r')
-fileOpen = [data.strip() for data in file.readlines()]
-gamma = ""
-epsilon = ""
-digits = ""
+fileLines = [data.strip() for data in file.readlines()]
 
-for lines in fileOpen:
-    i = lines[0]
-    for lines[i] in range(12):
-        digits = digist + lines[i]
-        print(digits)
-        zero = digits.count('0')
-        ones = digits.count('1')
-        if zero > ones:
-            gamma += '0'
-            epsilon += '1'
-        else:
-            gamme += '1'
-            epsilon += '0'
-            digits = ""
+
+def binary():
+
+    for lines in fileLines:
+        for i in lines:
+            print(lines)
+            print(i)
+            for i in range(12):
+                print(i)
+                zeroCount = str(i.count("0"))
+                onesCount = str(i.count("1"))
+                if zeroCount > onesCount:
+                    gamma = "0"
+                    epsilon = "1"
+                else:
+                    gamma = "1"
+                    epsilon = "0"
+                    return gamma
+                return epsilon
+print(binary())
